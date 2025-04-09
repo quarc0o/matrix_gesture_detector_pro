@@ -140,9 +140,7 @@ class _MatrixGestureDetectorState extends State<MatrixGestureDetector> {
   }
 
    void onScaleEnd(ScaleEndDetails details) {
-    if (widget.onMatrixUpdateEnd != null) {
-        widget.onMatrixUpdateEnd(details);
-    }
+       widget.onScaleEnd(details);
   }
 
   void onScaleUpdate(ScaleUpdateDetails details) {
